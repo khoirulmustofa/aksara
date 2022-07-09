@@ -1,0 +1,9 @@
+_install
+vendor
+writable/logs
+writable/session
+writable/cache
+
+install
+.vscode/settings.json
+config.php

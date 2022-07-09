@@ -37,7 +37,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = 'index.php';
+    public $indexPage = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -152,7 +152,8 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $sessionDriver = FileHandler::class;
+    // public $sessionDriver = FileHandler::class;
+    public $sessionDriver = 'CodeIgniter\Session\Handlers\DatabaseHandler';
 
     /**
      * --------------------------------------------------------------------------
@@ -163,7 +164,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $sessionCookieName = COOKIE_NAME;
+    public $sessionCookieName = COOKIE_NAME;    
 
     /**
      * --------------------------------------------------------------------------
@@ -194,7 +195,8 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $sessionSavePath = WRITEPATH . 'session';
+    // public $sessionSavePath = WRITEPATH . 'session';
+    public $sessionSavePath = 'app__sessions';
 
     /**
      * --------------------------------------------------------------------------
